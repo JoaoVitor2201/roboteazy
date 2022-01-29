@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .tituloLadoEsquerdo {
+            margin-left: 20%;
+        }
+
+        .ajusteMeio {
+            margin-left: 40%;
+        }
+
+        .tituloLadoDireito {
+            margin-left: 30%;
+        }
+    </style>
+</head>
+
+
+<body>
+
+
+
+    <div class="row">
+        <div class="col-lg-4">
+            <h1 class="tituloLadoDireito">Braço esquerdo</h1>
+            <input name="bracoEsquerdo" id="posicao1" onclick="ladoEsquerdo(1)" class="btn btn-primary ajusteMeio"
+                type="button" value="repouso">
+        </div>
+        <div class="col-lg-4">
+            <h1 class="tituloLadoDireito">Braço direito</h1>
+            <input name="bracoDireito" style="left: 30px" id="posicao1" onclick="ladoDireito(1)"
+                class="btn btn-primary ajusteMeio" type="button" value="repouso">
+
+        </div>
+
+        <div class="col-lg-4">
+            <h1 class="tituloLadoDireito">Cabeça Rotação</h1>
+            <input name="cabeca" style="left: 30px" id="posicao1" onclick="cabecaRotacao(1)"
+                class="btn btn-primary ajusteMeio" type="button" value="repouso">
+        </div>
+
+
+
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <input name="bracoEsquerdo" id="posicao1" onclick="ladoEsquerdo(2)" class="btn btn-primary ajusteMeio"
+                type="button" value="levemente contraido">
+        </div>
+        <div class="col-lg-4">
+
+            <input name="bracoDireito" id="posicao2" onclick="ladoDireito(2)" class="btn btn-primary ajusteMeio"
+                type="button" value="levemente contraido ">
+
+        </div>
+
+        <div class="col-lg-4">
+         <input name="cabeca" style="left: 30px" id="posicao1" onclick="cabecaRotacao(2)"
+                class="btn btn-primary ajusteMeio" type="button" value="Inclinação para baixo">
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <input name="bracoEsquerdo" id="posicao1" onclick="ladoEsquerdo(3)" class="btn btn-primary ajusteMeio"
+                type="button" value="contraido">
+        </div>
+        <div class="col-lg-4">
+
+            <input name="bracoDireito" id="posicao3" onclick="ladoDireito(3)" class="btn btn-primary  ajusteMeio"
+                type="button" value=" contraido ">
+
+        </div>
+
+        <div class="col-lg-4">
+         <input name="cabeca" style="left: 30px" id="posicao1" onclick="cabecaRotacao(3)"
+                class="btn btn-primary ajusteMeio" type="button" value="Inclinação para cima">
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <input name="bracoEsquerdo" id="posicao1" onclick="ladoEsquerdo(4)" class="btn btn-primary ajusteMeio"
+                type="button" value="fortemente contraido ">
+        </div>
+        <div class="col-lg-4">
+
+            <input name="bracoDireito" id="posicao4" onclick="ladoDireito(4)" class="btn btn-primary ajusteMeio"
+                type="button" value=" fortemente contraido ">
+
+        </div>
+
+        <div class="col-lg-4">
+          
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <h1 class="tituloLadoDireito">pulso esquerdo</h1>
+            <input name="bracoEsquerdo" id="posicao1" onclick="ladoEsquerdo(5)" class="btn btn-primary ajusteMeio"
+                type="button" value="Rotação para -90º">
+        </div>
+        <div class="col-lg-4">
+            <h1 class="tituloLadoDireito">pulso direito</h1>
+
+            <input name="bracoDireito" id="posicao4" onclick="ladoDireito(5)" class="btn btn-primary ajusteMeio"
+                type="button" value="Rotação para -90º ">
+
+        </div>
+        <div class="col-lg-4">
+            <h1 class="tituloLadoDireito">Cabeça Inclinação</h1>
+            <input name="cabeca" style="left: 30px" id="posicao1" onclick="cabecaRotacao('a', 1)"
+            class="btn btn-primary ajusteMeio" type="button" value="repouso">
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <input name="bracoEsquerdo" id="posicao1" onclick="ladoEsquerdo(6)" class="btn btn-primary ajusteMeio"
+                type="button" value="Rotação para -45º">
+        </div>
+        <div class="col-lg-4">
+
+            <input name="bracoDireito" id="posicao4" onclick="ladoDireito(6)" class="btn btn-primary ajusteMeio"
+                type="button" value=" Rotação para -45º ">
+
+        </div>
+
+        <div class="col-lg-4">
+          <input name="bracoDireito" style="left: 30px" id="posicao1" onclick="cabecaRotacao('a', 2)"
+                class="btn btn-primary ajusteMeio" type="button" value="Rotação  para -45º.">
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <input name="bracoEsquerdo" id="posicao1" onclick="ladoEsquerdo(7)" class="btn btn-primary ajusteMeio"
+                type="button" value="Em Repouso">
+        </div>
+        <div class="col-lg-4">
+
+            <input name="bracoDireito" id="posicao4" onclick="ladoDireito(7)" class="btn btn-primary ajusteMeio"
+                type="button" value=" Em Repouso ">
+
+        </div>
+
+        <div class="col-lg-4">
+          <input name="cabeca" style="left: 30px" id="posicao1" onclick="cabecaRotacao('a', 3)"
+                class="btn btn-primary ajusteMeio" type="button" value="Rotação para -90º ">
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <input name="bracoEsquerdo" id="posicao1" onclick="ladoEsquerdo(8)" class="btn btn-primary ajusteMeio"
+                type="button" value="Rotação para 45º">
+        </div>
+        <div class="col-lg-4">
+
+            <input name="bracoDireito" id="posicao4" onclick="ladoDireito(8)" class="btn btn-primary ajusteMeio"
+                type="button" value=" Rotação para 45º ">
+
+        </div>
+
+        <div class="col-lg-4">
+          <input name="bracoDireito" style="left: 30px" id="posicao1" onclick="cabecaRotacao('a', 4)"
+                class="btn btn-primary ajusteMeio" type="button" value="Rotação para 45º ">
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <input name="bracoEsquerdo" id="posicao1" onclick="ladoEsquerdo(9)" class="btn btn-primary ajusteMeio"
+                type="button" value="Rotação para 90º">
+        </div>
+        <div class="col-lg-4">
+
+            <input name="bracoDireito" id="posicao4" onclick="ladoDireito(9)" class="btn btn-primary ajusteMeio"
+                type="button" value=" Rotação para 90º ">
+
+        </div>
+
+        <div class="col-lg-4">
+            <input name="bracoDireito" style="left: 30px" id="posicao1" onclick="cabecaRotacao('a', 5)"
+                class="btn btn-primary ajusteMeio" type="button" value="Rotação para 90º">
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <input name="bracoEsquerdo" id="posicao1" onclick="ladoEsquerdo(10)" class="btn btn-primary ajusteMeio"
+                type="button" value="Rotação para 135º">
+        </div>
+        <div class="col-lg-4">
+
+            <input name="bracoDireito" id="posicao4" onclick="ladoDireito(10)" class="btn btn-primary ajusteMeio"
+                type="button" value=" Rotação para 135º ">
+
+        </div>
+
+        <div class="col-lg-4">
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <input name="bracoEsquerdo" id="posicao1" onclick="ladoEsquerdo(11)" class="btn btn-primary ajusteMeio"
+                type="button" value="Rotação para 180º">
+        </div>
+        <div class="col-lg-4">
+
+            <input name="bracoDireito" id="posicao4" onclick="ladoDireito(11)" class="btn btn-primary ajusteMeio"
+                type="button" value=" Rotação para 180º ">
+
+        </div>
+
+        <div class="col-lg-4">
+
+
+        </div>
+
+    </div>
+
+
+    <input type="hidden" id="ladoDireito" value="1">
+    <input type="hidden" id="ladoEsquerdo" value="1">
+    <input type="hidden" id="cabecaRotacao" value="2">
+    <input type="hidden" id="cabecaInclinacao" value="3">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script>
+        function ladoDireito(acao) {
+
+            if (parseInt($('#ladoDireito').val()) + 1 == acao || parseInt($('#ladoDireito').val()) - 1 == acao) {
+                $('#ladoDireito').val(acao)
+
+                alert('Robo moveu ' + mensagensLadoDireiro(acao));
+            } else if ($('#ladoDireito').val() == acao) {
+                alert('Ja esta neste estado de ação')
+            } else {
+                alert('Atenção aos limites! Se tentar enviar um estado inválido você irá corromper o sistema do ROBO.')
+            }
+
+        }
+
+        function mensagensLadoDireiro(acao) {
+            if (acao == '1') return "braço direito para a açao Em repouso.";
+            if (acao == '2') return "braço direito para a açao levemente contraido.";
+            if (acao == '3') return "braço direito para a açao Contraído.";
+            if (acao == '4') return "braço direito para a açao fortemente contraido.";
+            if (acao == '5') return "pulso direito para a açao Rotação para -90º.";
+            if (acao == '6') return "pulso direito para a açao Rotação para -45º.";
+            if (acao == '7') return "pulso direito para a açao Em repouso.";
+            if (acao == '8') return "pulso direito para a açao Rotação para 45º.";
+            if (acao == '9') return "pulso direito para a açao Rotação para 90º.";
+            if (acao == '10') return "pulso direito para a açao Rotação para 135º.";
+            if (acao == '11') return "pulso direito para a açao Rotação para 180º.";
+        }
+
+        function ladoEsquerdo(acao) {
+
+            if (parseInt($('#ladoEsquerdo').val()) + 1 == acao || parseInt($('#ladoEsquerdo').val()) - 1 == acao) {
+                $('#ladoEsquerdo').val(acao)
+
+                alert('Robo moveu ' + mensagensLadoEsquerdo(acao));
+            } else if ($('#ladoEsquerdo').val() == acao) {
+                alert('Ja esta neste estado de ação')
+            } else {
+                alert('Atenção aos limites! Se tentar enviar um estado inválido você irá corromper o sistema do ROBO.')
+            }
+
+        }
+
+        function mensagensLadoEsquerdo(acao) {
+            if (acao == '1') return "braço Esquerdo para a açao Em repouso.";
+            if (acao == '2') return "braço Esquerdo para a açao levemente contraido.";
+            if (acao == '3') return "braço Esquerdo para a açao Contraído.";
+            if (acao == '4') return "braço Esquerdo para a açao fortemente contraido.";
+            if (acao == '5') return "pulso Esquerdo para a açao Rotação para -90º.";
+            if (acao == '6') return "pulso Esquerdo para a açao Rotação para -45º.";
+            if (acao == '7') return "pulso Esquerdo para a açao Em repouso.";
+            if (acao == '8') return "pulso Esquerdo para a açao Rotação para 45º.";
+            if (acao == '9') return "pulso Esquerdo para a açao Rotação para 90º.";
+            if (acao == '10') return "pulso Esquerdo para a açao Rotação para 135º.";
+            if (acao == '11') return "pulso Esquerdo para a açao Rotação para 180º.";
+        }
+
+        function cabecaRotacao(acao, inclinacao) {
+            if(acao == 'a'){
+                acao = $('#cabecaRotacao').val();
+            }
+            if(acao == 3){
+                $('#cabecaInclinacao').val(undefined);
+            }
+
+            if(acao == 3 && parseInt($('#cabecaRotacao').val()) == 2){
+                $('#cabecaRotacao').val(3)
+                $('#cabecaInclinacao').val(1)
+                 return alert(mensagenscabecaRotacao(3));
+            }
+
+            if(parseInt($('#cabecaRotacao').val()) != 3 && (parseInt($('#cabecaInclinacao').val()) + 1 == inclinacao || parseInt($('#cabecaInclinacao').val()) - 1 == inclinacao )){
+                $('#cabecaInclinacao').val(inclinacao);
+                return alert(mensagenscabecaInclinacao(inclinacao) + " " + mensagenscabecaRotacao(acao));
+            }
+
+            if(acao == 1 || acao == 2 && inclinacao == undefined){
+                $('#cabecaRotacao').val(acao);
+                alert(mensagenscabecaRotacao(acao));
+
+            }
+            
+        }
+
+        function mensagenscabecaRotacao(acao) {
+            if (acao == '1') return "Cabeça se encontra em reposuo.";
+            if (acao == '2') return "Cabeça inclinou-se para baixo.";
+            if (acao == '3') return "Cabeça inclinou-se para cima.";
+ 
+        }
+        function mensagenscabecaInclinacao(inclinacao) {
+            if (inclinacao == '1') return "Cabeça se encontra em repouso.";
+            if (inclinacao == '2') return "cabeça executou açao Rotação para -90º.";
+            if (inclinacao == '3') return "cabeça executou açao Rotação para -45º.";
+            if (inclinacao == '4') return "cabeça executou açao rotação para 45º.";
+            if (inclinacao == '5') return "cabeça executou açao totação para 90º.";
+        }
+
+        
+    </script>
+</body>
+
+</html>
